@@ -5,6 +5,13 @@ data class DonDatPhong(
     val hoTen : String,
     val sdt : String,
     val email : String,
-    val maLoaiPhong:
-
-)
+    val maLoaiPhong: String,
+    val ngayNhan : String,
+    val soDem : Int,
+    val soKhach : Int,
+    val ghiChu : String =""
+) : Serializable {
+    fun tomCat(): String {
+        return "$hoTen - $maLoaiPhong -$ngayNhan - $soDem đêm "
+    }
+}
