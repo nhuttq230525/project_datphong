@@ -1,3 +1,4 @@
+package vn.edu.ute.datphong.data
 import vn.edu.ute.datphong.model.LoaiPhong
 
 object DuLieuMau {

@@ -29,8 +29,7 @@ object DatPhongHelper {
             tienPhong = tienPhong * 90 / 100
         }
 
-        val phuThu = (soKhach - loai.sucChua)
-            .coerceAtLeast(0) * 150000L * soDem
+        val phuThu = (soKhach - loai.sucChua).coerceAtLeast(0) * 150000L * soDem
         return tienPhong + phuThu
     }
 }
