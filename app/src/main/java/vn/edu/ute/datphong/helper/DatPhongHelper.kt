@@ -7,7 +7,6 @@ object DatPhongHelper {
             it.ma.equals(ma.trim(), ignoreCase = true)
         }
     }
-
     fun hopLeSoKhach(
         loai: LoaiPhong,
         soKhach: Int
@@ -27,3 +26,11 @@ object DatPhongHelper {
         var tienPhong = loai.giaMotDem * soDem
 
         if (soDem >= 3) {
+            tienPhong = tienPhong * 90 / 100
+        }
+
+        val phuThu = (soKhach - loai.sucChua)
+            .coerceAtLeast(0) * 150000L * soDem
+        return tienPhong + phuThu
+    }
+}
